@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatbot using IBM Watson Assistant</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0f172a;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+
+    .step {
+        background: #1e293b;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        transition: transform 0.3s;
+    }
+
+    .step:hover {
+        transform: scale(1.02);
+    }
+
+    .step-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #38bdf8;
+    }
+
+    .step img {
+        width: 100%;
+        border-radius: 8px;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>Demo: Create Chatbot using IBM Watson Assistant</h1>
+
+<div class="container">
+
+<div class="step"><div class="step-title">Step 1: Log in to your IBM Cloud account.</div><img src="images3/day3_step1_1.png"></div>
+
+<div class="step"><div class="step-title">Step 2: Search for IBM Watson Assistant service.</div><img src="images3/day3_step2_1.png"></div>
+
+<div class="step"><div class="step-title">Step 3: Select Lite Plan, check the checkbox and click Create.</div><img src="images3/day3_step3_1.png"></div>
+
+<div class="step"><div class="step-title">Step 4: Click on Launch Watson Assistant.</div><img src="images3/day3_step4_1.png"></div>
+
+<div class="step"><div class="step-title">Step 5: Enter assistant name and description.</div><img src="images3/day3_step5_1.png"></div>
+
+<div class="step"><div class="step-title">Step 6: Choose Other plan and click Next.</div><img src="images3/day3_step6_1.png"></div>
+
+<div class="step"><div class="step-title">Step 7: Enter chatbot name, choose colors and image.</div><img src="images3/day3_step7_1.png"></div>
+
+<div class="step"><div class="step-title">Step 8: Click Create.</div><img src="images3/day3_step8_1.png"></div>
+
+<div class="step"><div class="step-title">Step 9: Click Action button on left side.</div><img src="images3/day3_step9_1.png"></div>
+
+<div class="step"><div class="step-title">Step 10: Click Create Action.</div><img src="images3/day3_step10_1.png"></div>
+
+<div class="step"><div class="step-title">Step 11: Define greeting messages like Hi, Hello, etc.</div><img src="images3/day3_step11_1.png"></div>
+
+<div class="step"><div class="step-title">Step 11a: Click Conversation step bar.</div><img src="images3/day3_step11a_1.png"></div>
+
+<div class="step"><div class="step-title">Step 12: Enter assistant response for greeting.</div><img src="images3/day3_step12_1.png"></div>
+
+<div class="step"><div class="step-title">Step 13: Ask for consumer name and define response as free text.</div><img src="images3/day3_step13_1.png"></div>
+
+<div class="step"><div class="step-title">Step 14: Set variable for name.</div><img src="images3/day3_step14_1.png"></div>
+
+<div class="step"><div class="step-title">Step 15: Enter variable name as 'name' and type free text.</div><img src="images3/day3_step15_1.png"></div>
+
+<div class="step"><div class="step-title">Step 16: Select action step variable in To option.</div><img src="images3/day3_step16_1.png"></div>
+
+<div class="step"><div class="step-title">Step 17: Add assistant variable using fx icon.</div><img src="images3/day3_step17_1.png"></div>
+
+<div class="step"><div class="step-title">Step 18: Click Save and close.</div><img src="images3/day3_step18_1.png"></div>
+
+<div class="step"><div class="step-title">Step 19: Create new action for questions.</div><img src="images3/day3_step19_1.png"></div>
+
+<div class="step"><div class="step-title">Step 20: Add consumer question like course list.</div><img src="images3/day3_step20_1.png"></div>
+
+<div class="step"><div class="step-title">Step 21: Provide course options and responses.</div><img src="images3/day3_step21_1.png"></div>
+
+<div class="step"><div class="step-title">Step 22: Add all courses in option list.</div><img src="images3/day3_step22_1.png"></div>
+
+<div class="step"><div class="step-title">Step 23: Create conditions for each course.</div><img src="images3/day3_step23_1.png"></div>
+
+<div class="step"><div class="step-title">Step 24: Save action and preview chatbot.</div><img src="images3/day3_step24_1.png"></div>
+
+<div class="step"><div class="step-title">Step 25: Create action for course enrollment.</div><img src="images3/day3_step25_1.png"></div>
+
+<div class="step"><div class="step-title">Step 26: Ask qualification with Yes/No options.</div><img src="images3/day3_step26_1.png"></div>
+
+<div class="step"><div class="step-title">Step 27: Ask contact number after Yes response.</div><img src="images3/day3_step27_1.png"></div>
+
+<div class="step"><div class="step-title">Step 28: Confirm admission callback within 24 hours.</div><img src="images3/day3_step28_1.png"></div>
+
+<div class="step"><div class="step-title">Step 29: Preview chatbot and verify responses.</div><img src="images3/day3_step29_1.png"></div>
+
+<div class="step"><div class="step-title">Step 30: Publish chatbot.</div><img src="images3/day3_step30_1.png"></div>
+
+<div class="step"><div class="step-title">Step 31: Click Create Version.</div><img src="images3/day3_step31_1.png"></div>
+
+<div class="step"><div class="step-title">Step 32: Integrate chatbot with channels like Twilio.</div><img src="images3/day3_step32_1.png"></div>
+
+<div class="step"><div class="step-title">Step 33: Select Twilio integration.</div><img src="images3/day3_step33_1.png"></div>
+
+<div class="step"><div class="step-title">Step 34: Create or setup Twilio account.</div><img src="images3/day3_step34_1.png"></div>
+
+<div class="step"><div class="step-title">Step 35: Copy SID and Auth token from Twilio.</div><img src="images3/day3_step35_1.png"></div>
+
+<div class="step"><div class="step-title">Step 36: Click Finish.</div><img src="images3/day3_step36_1.png"></div>
+
+<div class="step"><div class="step-title">Step 37: Open WhatsApp with Twilio.</div><img src="images3/day3_step37_1.png"></div>
+
+<div class="step"><div class="step-title">Step 38: Open WhatsApp again with Twilio.</div><img src="images3/day3_step38_1.png"></div>
+
+<div class="step"><div class="step-title">Step 39: Fill required details.</div><img src="images3/day3_step39_1.png"></div>
+
+<div class="step"><div class="step-title">Step 40: Test WhatsApp messaging from Twilio.</div><img src="images3/day3_step40_1.png"></div>
+
+<div class="step"><div class="step-title">Step 41: Scan QR code and send join message to activate chatbot.</div><img src="images3/day3_step41_1.png"></div>
+
+</div>
+
+</body>
+</html>
